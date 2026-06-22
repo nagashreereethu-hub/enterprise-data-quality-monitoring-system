@@ -1,30 +1,62 @@
-Enterprise Data Quality Monitoring & Management System
-📌 Project Overview:
+# Enterprise Data Quality Monitoring & Reporting System
 
-This project is a web-based data quality monitoring system built using Python and Streamlit.
-It allows users to upload CSV datasets and automatically analyzes data quality metrics such as:
+## Project Overview
 
--Missing values detection
--Duplicate records identification
--Column data types validation
--Basic data profiling
+Organizations often face data quality issues such as missing values, duplicate records, and inconsistent data that affect reporting and business decisions.
 
-🚀 Features:
+This project is a web-based data quality monitoring system developed using Python, Pandas, and Streamlit. It enables users to upload datasets and automatically validate data quality by identifying missing values, duplicate records, outliers, and generating data quality reports and quality scores.
 
-1.Upload any CSV file
-2.Dataset preview
-3.Missing value summary
-4.Duplicate check
-5.Data Quality Report generation
+The solution helps ensure that datasets are accurate, reliable, and ready for analytics and reporting purposes.
 
-🛠️ Tech Stack:
 
-Python
-Pandas
-Streamlit
-GitHub
+## Features
 
-📊 Use Case:
+* Upload and analyze CSV datasets
+* Dataset preview and data profiling
+* Missing value detection and analysis
+* Duplicate record identification
+* Outlier detection for numerical columns
+* Data quality score generation
+* Column-wise data quality reporting
+* Interactive web interface using Streamlit
 
-Designed to simulate an enterprise-level data quality monitoring solution where organizations can validate data before using it for analytics and reporting.
+## Business Use Case
+
+Organizations rely on accurate and reliable data for reporting, analytics, and decision-making. Poor data quality can lead to incorrect insights and operational inefficiencies.
+
+This solution helps validate datasets by identifying missing values, duplicate records, and data quality issues before they are used for business reporting and analysis. It provides a centralized approach to monitoring data quality and improving reporting accuracy.
+
+## Project Workflow
+
+1. Upload CSV Dataset
+2. Preview Dataset
+3. Validate Data Quality
+4. Detect Missing Values
+5. Identify Duplicate Records
+6. Detect Outliers in Numerical Columns
+7. Generate Data Quality Score
+8. Create Data Quality Report
+9. Support Analytics and Reporting
+
+## Technology Stack
+
+* Python
+* Pandas
+* NumPy
+* Streamlit
+* GitHub
+
+## Key Functionalities
+
+* Data Validation
+* Missing Value Detection
+* Duplicate Record Identification
+* Outlier Analysis
+* Data Quality Scoring
+* Data Profiling
+* Reporting Support
+
+
+
+
 
