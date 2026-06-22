@@ -15,6 +15,11 @@ if uploaded_file is not None:
 
     st.subheader("📌 Dataset Preview")
     st.dataframe(df.head())
+    st.subheader("📊 Dataset Summary")
+    col1, col2, col3 = st.columns(3)
+    col1.metric("Rows", df.shape[0])
+    col2.metric("Columns", df.shape[1])
+    col3.metric("Total Records", len(df))
 
     st.subheader("🔎 Data Quality Report")
     st.subheader("📊 Data Quality Report")
