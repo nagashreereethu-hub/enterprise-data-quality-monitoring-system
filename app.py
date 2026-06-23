@@ -35,6 +35,13 @@ if uploaded_file is not None:
     st.write(f"Data Quality Score: {quality_score:.2f}%")
 
     st.progress(int(quality_score))
+    if quality_score >= 90:
+        st.success("✅ Excellent Data Quality")
+    elif quality_score >= 70:
+        st.warning("⚠️ Good Data Quality")
+    else:
+        st.error("❌ Poor Data Quality")
+
 
     # Missing Values
     missing = df.isnull().sum()
@@ -67,9 +74,46 @@ if uploaded_file is not None:
     col2.metric("Total Missing Values", int(total_missing))
     col3.metric("Data Quality Score (%)", quality_score)
 
+    report = pd.DataFrame({
+        "Metric": [
+            "Duplicate Records",
+            "Missing Values",
+            "Data Quality Score"],
+        "Value": [
+            duplicates,
+            total_missing,
+            quality_score
+            ]
+        })
+    csv = report.to_csv(index=False)
+    st.download_button(
+        label="📥 Download Quality Report",
+        data=csv,
+        file_name="data_quality_report.csv",
+        mime="text/csv")
+
+    st.subheader("📋 Dataset Profile")
+    profile_df = pd.DataFrame({
+        "Column": df.columns,
+        "Data Type": df.dtypes.astype(str),
+        "Unique Values": [df[col].nunique() for col in df.columns]
+        })
+    st.dataframe(profile_df)
+
     st.subheader("📊 Missing Values by Column")
-    st.dataframe(missing)
+    missing_df = pd.DataFrame({
+        "Column": missing.index,
+        "Missing Values": missing.values
+    })
+    st.dataframe(missing_df)
+    st.bar_chart(
+        missing_df.set_index("Column")
+    )
+
+
 
     st.subheader("📊 Outliers by Column")
     st.dataframe(pd.DataFrame(outliers.items(), columns=["Column", "Outlier Count"]))
+
+
 
