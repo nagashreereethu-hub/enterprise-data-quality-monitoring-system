@@ -84,7 +84,7 @@ Allows users to download data quality reports for documentation and review.
 
 ### Dashboard Overview
 
-![Dashboard Overview](Images/data_quality_report.png)
+![Dashboard Overview](Images/Dashboard+Dataset summary.png)
 
 ### Dataset Summary
 
