@@ -1,42 +1,44 @@
+
 # Enterprise Data Quality Monitoring & Reporting System
 
 ## Project Overview
 
-Organizations often face data quality issues such as missing values, duplicate records, and inconsistent data that affect reporting and business decisions.
+Enterprise Data Quality Monitoring & Reporting System is a web-based data validation and reporting solution developed using Python, Pandas, NumPy, and Streamlit.
 
-This project is a web-based data quality monitoring system developed using Python, Pandas, and Streamlit. It enables users to upload datasets and automatically validate data quality by identifying missing values, duplicate records, outliers, and generating data quality reports and quality scores.
+The application enables users to upload datasets and automatically assess data quality by performing missing value analysis, duplicate record detection, outlier identification, dataset profiling, and quality score generation. It helps organizations improve data accuracy, consistency, and reliability before datasets are used for analytics, reporting, and business decision-making.
 
-The solution helps ensure that datasets are accurate, reliable, and ready for analytics and reporting purposes.
+## Business Problem
 
+Organizations depend on high-quality data for reporting, analytics, and operational processes. Poor data quality can result in inaccurate reports, incorrect business insights, and reduced decision-making effectiveness.
 
-## Features
+This solution provides a centralized approach to monitoring and validating data quality, helping teams identify data issues early and improve reporting accuracy.
 
-* Upload and analyze CSV datasets
-* Dataset preview and data profiling
-* Missing value detection and analysis
-* Duplicate record identification
-* Outlier detection for numerical columns
-* Data quality score generation
-* Column-wise data quality reporting
-* Interactive web interface using Streamlit
+## Key Features
 
-## Business Use Case
-
-Organizations rely on accurate and reliable data for reporting, analytics, and decision-making. Poor data quality can lead to incorrect insights and operational inefficiencies.
-
-This solution helps validate datasets by identifying missing values, duplicate records, and data quality issues before they are used for business reporting and analysis. It provides a centralized approach to monitoring data quality and improving reporting accuracy.
+* CSV Dataset Upload and Validation
+* Dataset Preview and Profiling
+* Row and Column Summary Metrics
+* Data Type Validation
+* Missing Value Detection and Analysis
+* Duplicate Record Identification
+* Outlier Detection for Numerical Attributes
+* Data Quality Score Calculation
+* Data Quality Status Classification
+* Downloadable Data Quality Reports
+* Interactive Dashboard Interface
 
 ## Project Workflow
 
-1. Upload CSV Dataset
-2. Preview Dataset
-3. Validate Data Quality
-4. Detect Missing Values
-5. Identify Duplicate Records
-6. Detect Outliers in Numerical Columns
-7. Generate Data Quality Score
-8. Create Data Quality Report
-9. Support Analytics and Reporting
+1. Upload Dataset
+2. Preview Data
+3. Generate Dataset Profile
+4. Validate Data Quality
+5. Detect Missing Values
+6. Identify Duplicate Records
+7. Perform Outlier Analysis
+8. Calculate Data Quality Score
+9. Generate Quality Status
+10. Download Quality Report
 
 ## Technology Stack
 
@@ -46,17 +48,80 @@ This solution helps validate datasets by identifying missing values, duplicate r
 * Streamlit
 * GitHub
 
-## Key Functionalities
+
+## Core Functionalities
+
+### Data Validation
+
+Validates uploaded datasets to identify data quality issues before reporting and analysis.
+
+### Dataset Profiling
+
+Provides metadata insights including column information, data types, and unique value counts.
+
+### Missing Value Analysis
+
+Detects and summarizes missing data across all columns.
+
+### Duplicate Detection
+
+Identifies duplicate records that may impact reporting accuracy.
+
+### Outlier Detection
+
+Detects unusual values in numerical columns using statistical methods.
+
+### Data Quality Scoring
+
+Generates a quality score to measure dataset reliability.
+
+### Reporting Support
+
+Allows users to download data quality reports for documentation and review.
+
+
+## Screenshots
+
+### Dashboard Overview
+
+![Dashboard Overview](Images/data_quality_report.png)
+
+### Dataset Summary
+
+![Dataset Summary](Images/dataset_summary.png)
+
+### Dataset Profiling
+
+![Dataset Profiling](Images/dataset_profile.png)
+
+### Quality Metrics
+
+![Quality Metrics](Images/quality_metrics.png)
+
+### Outlier Analysis & Reporting
+
+![Outlier Analysis](Images/outlier_report.png)
+
+---
+
+## Future Enhancements
+
+* Automated Data Quality Alerts
+* Data Quality Trend Monitoring
+* PDF Report Generation
+* Multi-file Validation Support
+* Integration with Databases and Cloud Storage
+
+---
+
+## Skills Demonstrated
 
 * Data Validation
-* Missing Value Detection
-* Duplicate Record Identification
-* Outlier Analysis
-* Data Quality Scoring
+* Data Quality Monitoring
 * Data Profiling
-* Reporting Support
-
-
-
-
+* Reporting & Documentation
+* Data Analysis
+* Dashboard Development
+* Python Programming
+* Business Reporting
 
