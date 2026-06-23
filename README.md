@@ -79,31 +79,6 @@ Generates a quality score to measure dataset reliability.
 
 Allows users to download data quality reports for documentation and review.
 
-
-## Screenshots
-
-### Dashboard Overview
-
-![Dashboard_and_Dataset_summary](Pictures/Dashboard_and_Dataset_summary.png)
-
-### Dataset Summary
-
-![Dataset Summary](Images/.png)
-
-### Dataset Profiling
-
-![Dataset Profiling](Images/dataset_profile.png)
-
-### Quality Metrics
-
-![Quality Metrics](Images/quality_metrics.png)
-
-### Outlier Analysis & Reporting
-
-![Outlier Analysis](Images/outlier_report.png)
-
----
-
 ## Future Enhancements
 
 * Automated Data Quality Alerts
@@ -112,7 +87,6 @@ Allows users to download data quality reports for documentation and review.
 * Multi-file Validation Support
 * Integration with Databases and Cloud Storage
 
----
 
 ## Skills Demonstrated
 
